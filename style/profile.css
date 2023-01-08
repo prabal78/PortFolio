@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: cursive;
   }
   .navbar{
     z-index: 999;
@@ -226,6 +227,45 @@
     background: #111 ;
     content: "i servers";
   }
+  .box .btn-show{
+    display: flex;
+    flex-direction: column;
+  }
+  .box .btn-show .view-source{
+    display: inline-block;
+    background: crimson;
+    color: aliceblue;
+    font-size: 17px;
+    width: 10rem;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px 20px;
+    /* margin-top: 20px; */
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+  .box .btn-show .view-source:hover{
+    color: rgb(247, 245, 245);
+    background: none;
+  }
+  .box .btn-show .view-live{
+    display: inline-block;
+    background: crimson;
+    color: aliceblue;
+    font-size: 17px;
+    width: 10rem;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  .box .btn-show .view-live:hover{
+    color: rgb(247, 245, 245);
+    background: none;
+  }
   .service .serv-content .card{
     width: calc(32% - 20px);
     background: #222;
@@ -343,7 +383,8 @@
     border: 5px solid crimson;
   }
   .teams .carousel .box{
-    cursor: pointer;
+    /* cursor: pointer; */
+    color: #fff;
   }
   .teams .carousel{
     display: flex;
